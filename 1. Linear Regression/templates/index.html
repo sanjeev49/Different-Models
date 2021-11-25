@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Page</title>
+</head>
+<body>
+    <p>Fill the form below to get  the prediction.<p>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method = "post" action="/predict">
+        <label>CRIM</label><br>
+        <input type = "number" step = "any" name="crim"><br><br>
+
+        <label>ZN</label><br>
+        <input type = "number" step = "any"  name="zn"><br><br>
+
+        <label>INDUS</label><br>
+        <input type = "number" step = "any" name="indus"><br><br>
+        <label>CHAS</label><br>
+        <input type = "number" step = "any" name="chas"><br><br>
+
+        <label>NOX</label><br>
+        <input type = "number" step = "any" name="nox"><br><br>
+
+        <label>RM</label><br>
+        <input type = "number" step = "any" name="rm"><br><br>
+
+        <label>AGE</label><br>
+        <input type = "number" step = "any" name="age"><br><br>
+
+        <label>DIS</label><br>
+        <input type = "number" step = "any" name="dis"><br><br>
+
+        <label>RAD</label><br>
+        <input type = "number" step = "any" name="rad"><br><br>
+
+        <label>TAX</label><br>
+        <input type = "number" step = "any" name="tax"><br><br>
+
+        <label>PTRATIO</label><br>
+        <input type = "number" step = "any" name="ptratio"><br><br>
+
+        <label>B</label><br>
+        <input type = "number" step = "any" name="b"><br><br>
+
+        
+        <label>LSTAT</label><br>
+        <input type = "number" step = "any" name="lstat"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+</body>
+</html>
